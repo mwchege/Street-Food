@@ -1,0 +1,355 @@
+/* Reset default margin and padding */
+
+body, ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Styles for the headder */
+header {
+    background-color: #649549; /*Eclipse green*/
+    padding: 20px;
+}
+
+/*Nav menu*/
+nav ul {
+    display: flex; /* - This alligns the list items horizontally*/
+    justify-content: space-around; /* This evenly spaces out the links*/
+    list-style-type: none; /* removes bullet points*/
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    color: #6CB840;
+}
+.banner p {
+    font-size: 1.2rem;
+}
+
+.banner button {
+    background-color:#6CB840 ; /*background color of the button*/
+    color: white; /*white text color*/
+    border: none; /*removes any borders*/
+    padding: 10px 20px; /*dds space inside the button*/
+    cursor: pointer; /* makes the mouse a hand when hovering on the order button*/
+    margin-top: 10px; /* adds a space above the button*/
+}
+
+/*eat toghether part*/
+
+.eat-together {
+    background-color: white;
+    padding: 40px 20px; /*space around the content*/
+    text-align: center; 
+    margin-top: 20px; /*space above section*/
+}
+
+.eat-together h2 {
+    font-size: 2rem;
+    color: #EAAB1B;
+    margin-bottom: 10px;
+}
+
+.eat-together p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.eat-together .image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.eat-together img {
+    max-width: 80%; 
+    height: auto; /*maintains aspect ratio of the image*/
+}
+
+/*explore menu section*/
+.explore-menu {
+    background-color: #d7e7b8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.explore-menu h2 {
+    font-size: 2rem;
+    color: #6CB840;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*created responsive grid collumns??? ( yeah i dont know )*/
+    gap: 20px; /*space between grid*/
+
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius:  10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*shadow effect*/
+}
+
+.menu-item img {
+    width: 100%; /* Adjust the percentage to make the image smaller */
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+.menu-item p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Increased gap for better spacing */
+    padding: 0 20px; /* Adjusted padding to give more space on the sides */
+  }
+
+  .hot-deals {
+    background-color:  #C9ECB5;
+    padding: 30px 0;
+  }
+
+  .deal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .deal-images {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drink-image {
+    height: 500px;
+    margin-right: -226px; /*overlap the images*/
+  }
+
+  .burger-image {
+    height: 220px;
+  }
+
+  .deal-text {
+    flex: 1;
+    padding-left: 50px;
+  }
+
+  .deal-text h2 {
+    font-family: Poppins;
+    font-size: 2rem;
+    color:  #000000;
+  }
+
+  .deal-text h2 span {
+    color: #8bc34a;
+  }
+
+  .deal-text H3 {
+    font-family: Poppins;
+    font-size: 1.8rem;
+    color: #6CB840;
+  }
+
+  .deal-text p {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 10px;
+  }
+
+  .deal-description {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+
+/*this sets the font as poppins for the whole page but i wont remove it from each individual styling emelemt*/
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-us {
+ background-color: #FFD77C;
+ padding: 40px 20px;
+ text-align: center;
+  }
+
+  .contact-us h2 {
+    font-size: 36px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+  }
+
+  .contact-us p {
+    font-size: 16PX;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+  }
+
+  .contact-us input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .contact-us button {
+    padding: 10px 20px;
+    background-color:  #6CB840;
+    color: #Fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-us .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-us .contact-info p {
+    font-size: 14px;
+    color: #4A4A4A;
+    margin: 5px 0;
+  }
+
+.contact-us .social-follow {
+    margin-top: 30px;
+}
+
+.contact-us .social-follow p {
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.contact-us .social-follow a {
+    color: #4CAF50;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.banner {
+    text-align: center;
+}
+
+
+.explore-menu {
+    padding: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with gap */
+    box-sizing: border-box;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hot-deals {
+    padding: 20px;
+}
+
+.deal-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.deal-images {
+    flex: 1;
+}
+
+.deal-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.deal-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.deal-text h2 {
+    font-size: 2rem;
+}
+
+.deal-text h3 {
+    font-size: 1.5rem;
+}
+
+.contact-us {
+    padding: 20px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.social-follow a {
+    display: block;
+    margin: 5px 0;
+}
